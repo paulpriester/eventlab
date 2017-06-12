@@ -34,12 +34,7 @@ class App extends React.Component {
 
   }
 
-  handleDelete(e){
-    console.log(this.state)
-    this.setState({
-      tasks: this.state.tasks.filter((task)=>task !== e)
-    })
-  }
+
 
 
 
