@@ -18,15 +18,6 @@ class Todo extends React.Component{
 
   }
 
-// componentWillReceiveProps(nextProps){
-//   if (nextProps !== this.props){
-//     this.setState({
-//       complete: false
-//     })
-//   }
-// }
-
-
 
 
 render(){
@@ -34,7 +25,7 @@ render(){
     !this.state.complete ?
     <div>
       <li>{this.props.task}
-        <button onClick={ ()=> this.props.del(this.props.task)}>Delete</button>
+
         <button onClick={ (event)=> this.handleClick(event) }>complete</button>
       </li>
       <br></br>
@@ -43,7 +34,6 @@ render(){
     :
     <div>
       <li>{this.props.task}
-        <button onClick={ ()=> this.props.del(this.props.task)}>Delete</button>
       </li>
       <br></br>
       mission complete
@@ -51,6 +41,7 @@ render(){
     )
   }
 }
+
 
 
 export default Todo;
